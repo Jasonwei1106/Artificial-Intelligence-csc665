@@ -1,0 +1,765 @@
+
+Question q1
+===========
+*** q1) check_perceptron
+Sanity checking perceptron...
+Sanity checking perceptron weight updates...
+Sanity checking complete. Now training perceptron
+Traceback (most recent call last):
+  File "autograder.py", line 208, in main
+    fn(tracker)
+  File "autograder.py", line 394, in check_perceptron
+    model.train(dataset)
+  File "C:\Users\jason\Desktop\665\machinelearning\models.py", line 52, in train
+    for x,y in dataset.iterate_once(1):
+  File "C:\Users\jason\Desktop\665\machinelearning\backend.py", line 121, in iterate_once
+    self.fig.canvas.start_event_loop(1e-3)
+  File "C:\Users\jason\AppData\Roaming\Python\Python37\site-packages\matplotlib\backend_bases.py", line 2288, in start_event_loop
+    self.flush_events()
+  File "C:\Users\jason\AppData\Roaming\Python\Python37\site-packages\matplotlib\backends\_backend_tk.py", line 405, in flush_events
+    self._master.update()
+  File "C:\Python37\lib\tkinter\__init__.py", line 1177, in update
+    self.tk.call('update')
+_tkinter.TclError: can't invoke "update" command: application has been destroyed
+
+
+### Question q1: 2/6 ###
+
+Question q2
+===========
+*** q2) check_regression
+Traceback (most recent call last):
+  File "autograder.py", line 208, in main
+    fn(tracker)
+  File "autograder.py", line 444, in check_regression
+    model.train(dataset)
+  File "C:\Users\jason\Desktop\665\machinelearning\models.py", line 114, in train
+    for x, y in dataset.iterate_once(1):
+  File "C:\Users\jason\Desktop\665\machinelearning\backend.py", line 163, in iterate_once
+    self.fig.canvas.start_event_loop(1e-3)
+  File "C:\Users\jason\AppData\Roaming\Python\Python37\site-packages\matplotlib\backend_bases.py", line 2288, in start_event_loop
+    self.flush_events()
+  File "C:\Users\jason\AppData\Roaming\Python\Python37\site-packages\matplotlib\backends\_backend_tk.py", line 405, in flush_events
+    self._master.update()
+  File "C:\Python37\lib\tkinter\__init__.py", line 1177, in update
+    self.tk.call('update')
+_tkinter.TclError: can't invoke "update" command: application has been destroyed
+
+
+### Question q2: 2/6 ###
+
+Question q3
+===========
+*** q3) check_digit_classification
+Traceback (most recent call last):
+  File "autograder.py", line 208, in main
+    fn(tracker)
+  File "autograder.py", line 507, in check_digit_classification
+    model.train(dataset)
+  File "C:\Users\jason\Desktop\665\machinelearning\models.py", line 205, in train
+    for x, y in dataset.iterate_once(1):
+  File "C:\Users\jason\Desktop\665\machinelearning\backend.py", line 266, in iterate_once
+    self.fig.canvas.start_event_loop(1e-3)
+  File "C:\Users\jason\AppData\Roaming\Python\Python37\site-packages\matplotlib\backend_bases.py", line 2288, in start_event_loop
+    self.flush_events()
+  File "C:\Users\jason\AppData\Roaming\Python\Python37\site-packages\matplotlib\backends\_backend_tk.py", line 405, in flush_events
+    self._master.update()
+  File "C:\Python37\lib\tkinter\__init__.py", line 1177, in update
+    self.tk.call('update')
+_tkinter.TclError: can't invoke "update" command: application has been destroyed
+
+
+### Question q3: 2/6 ###
+
+Question q4
+===========
+*** q4) check_lang_id
+Alphabet: abcdefghijklmnopqrstuvwxyzaaeeeeiinoouuacelnszz
+NOTE: Your terminal does not appear to support printing Unicode characters.
+For the purposes of printing to the terminal, some of the letters in the
+alphabet above have been substituted with ASCII symbols.
+
+epoch 1 iteration 25 validation-accuracy 19.0%
+  noisy      English ( 14.5%) Pred: Spanish |en 14%|es 27%|fi 18%|nl 26%|pl 15%
+  cutie      English ( 22.3%) Pred: Polish  |en 22%|es 18%|fi 14%|nl 20%|pl 27%
+  jammed     English ( 25.3%) Pred: Finnish |en 25%|es 19%|fi 29%|nl  7%|pl 19%
+  ingleses   Spanish ( 28.1%) Pred: English |en 31%|es 28%|fi 15%|nl 15%|pl 10%
+  ejecutivo  Spanish (  9.9%) Pred: English |en 30%|es 10%|fi 27%|nl 22%|pl 10%
+  pierna     Spanish ( 13.3%) Pred: Polish  |en 16%|es 13%|fi 16%|nl 20%|pl 35%
+  rakastin   Finnish ( 13.7%) Pred: Polish  |en 21%|es 14%|fi 14%|nl 24%|pl 27%
+  korttia    Finnish ( 23.1%) Pred: Dutch   |en 12%|es 18%|fi 23%|nl 30%|pl 18%
+  syotavaa   Finnish ( 27.7%) Pred: Spanish |en 17%|es 28%|fi 28%|nl 14%|pl 13%
+  leveren    Dutch   ( 17.4%) Pred: English |en 31%|es 16%|fi 15%|nl 17%|pl 21%
+  haren      Dutch   ( 23.8%) Pred: English |en 29%|es 10%|fi 18%|nl 24%|pl 19%
+  weggelopen Dutch   ( 10.2%) Pred: English |en 38%|es 24%|fi 17%|nl 10%|pl 10%
+  poddac     Polish  ( 26.4%)               |en 22%|es 17%|fi  9%|nl 25%|pl 26%
+  studia     Polish  (  9.2%) Pred: Dutch   |en 25%|es  9%|fi 27%|nl 30%|pl  9%
+  powietrze  Polish  ( 31.8%)               |en 24%|es 18%|fi 12%|nl 14%|pl 32%
+epoch 1 iteration 53 validation-accuracy 22.2%
+  noisy      English ( 14.3%) Pred: Spanish |en 14%|es 28%|fi 17%|nl 27%|pl 14%
+  cutie      English ( 20.9%) Pred: Polish  |en 21%|es 17%|fi 13%|nl 23%|pl 27%
+  jammed     English ( 25.8%) Pred: Finnish |en 26%|es 20%|fi 29%|nl  7%|pl 17%
+  ingleses   Spanish ( 23.7%) Pred: English |en 30%|es 24%|fi 21%|nl 14%|pl 11%
+  ejecutivo  Spanish (  9.1%) Pred: Finnish |en 24%|es  9%|fi 31%|nl 22%|pl 14%
+  pierna     Spanish ( 13.5%) Pred: Polish  |en 16%|es 14%|fi 18%|nl 21%|pl 32%
+  rakastin   Finnish ( 18.6%) Pred: Polish  |en 20%|es 13%|fi 19%|nl 19%|pl 29%
+  korttia    Finnish ( 29.9%)               |en 10%|es 17%|fi 30%|nl 26%|pl 18%
+  syotavaa   Finnish ( 35.3%)               |en 16%|es 23%|fi 35%|nl 15%|pl 11%
+  leveren    Dutch   ( 19.9%) Pred: English |en 30%|es 14%|fi 16%|nl 20%|pl 20%
+  haren      Dutch   ( 24.2%) Pred: English |en 29%|es  9%|fi 19%|nl 24%|pl 18%
+  weggelopen Dutch   ( 14.1%) Pred: English |en 29%|es 26%|fi 18%|nl 14%|pl 13%
+  poddac     Polish  ( 24.3%) Pred: Dutch   |en 21%|es 19%|fi 11%|nl 25%|pl 24%
+  studia     Polish  (  7.4%) Pred: Finnish |en 24%|es  9%|fi 31%|nl 29%|pl  7%
+  powietrze  Polish  ( 33.8%)               |en 23%|es 18%|fi 13%|nl 12%|pl 34%
+epoch 1 iteration 83 validation-accuracy 24.4%
+  noisy      English ( 13.4%) Pred: Dutch   |en 13%|es 25%|fi 18%|nl 28%|pl 16%
+  cutie      English ( 21.3%) Pred: Polish  |en 21%|es 16%|fi 13%|nl 22%|pl 28%
+  jammed     English ( 24.9%) Pred: Finnish |en 25%|es 20%|fi 29%|nl  9%|pl 17%
+  ingleses   Spanish ( 26.0%)               |en 26%|es 26%|fi 18%|nl 17%|pl 13%
+  ejecutivo  Spanish (  9.0%) Pred: Finnish |en 24%|es  9%|fi 33%|nl 22%|pl 13%
+  pierna     Spanish ( 15.1%) Pred: Polish  |en 16%|es 15%|fi 20%|nl 18%|pl 32%
+  rakastin   Finnish ( 25.7%) Pred: Polish  |en 13%|es 12%|fi 26%|nl 15%|pl 34%
+  korttia    Finnish ( 37.8%)               |en  8%|es 16%|fi 38%|nl 22%|pl 16%
+  syotavaa   Finnish ( 37.0%)               |en 12%|es 22%|fi 37%|nl 17%|pl 13%
+  leveren    Dutch   ( 21.1%) Pred: English |en 24%|es 15%|fi 19%|nl 21%|pl 20%
+  haren      Dutch   ( 26.3%)               |en 25%|es  9%|fi 24%|nl 26%|pl 16%
+  weggelopen Dutch   ( 16.1%) Pred: English |en 30%|es 24%|fi 18%|nl 16%|pl 12%
+  poddac     Polish  ( 25.0%)               |en 21%|es 20%|fi 12%|nl 22%|pl 25%
+  studia     Polish  (  7.0%) Pred: Finnish |en 20%|es  8%|fi 39%|nl 26%|pl  7%
+  powietrze  Polish  ( 27.6%)               |en 27%|es 20%|fi 13%|nl 12%|pl 28%
+epoch 1 iteration 111 validation-accuracy 25.0%
+  noisy      English ( 14.7%) Pred: Dutch   |en 15%|es 25%|fi 17%|nl 27%|pl 16%
+  cutie      English ( 22.2%) Pred: Polish  |en 22%|es 16%|fi 13%|nl 20%|pl 29%
+  jammed     English ( 23.4%) Pred: Finnish |en 23%|es 21%|fi 30%|nl  8%|pl 18%
+  ingleses   Spanish ( 28.5%)               |en 26%|es 29%|fi 17%|nl 18%|pl 10%
+  ejecutivo  Spanish ( 13.6%) Pred: Finnish |en 25%|es 14%|fi 27%|nl 20%|pl 14%
+  pierna     Spanish ( 16.4%) Pred: Polish  |en 16%|es 16%|fi 20%|nl 14%|pl 34%
+  rakastin   Finnish ( 30.5%)               |en 13%|es 13%|fi 31%|nl 15%|pl 29%
+  korttia    Finnish ( 37.5%)               |en  8%|es 16%|fi 37%|nl 22%|pl 16%
+  syotavaa   Finnish ( 40.6%)               |en 11%|es 20%|fi 41%|nl 17%|pl 12%
+  leveren    Dutch   ( 23.1%) Pred: English |en 23%|es 17%|fi 19%|nl 23%|pl 17%
+  haren      Dutch   ( 25.7%)               |en 25%|es 11%|fi 24%|nl 26%|pl 14%
+  weggelopen Dutch   ( 14.4%) Pred: English |en 33%|es 26%|fi 15%|nl 14%|pl 12%
+  poddac     Polish  ( 27.9%)               |en 21%|es 20%|fi 12%|nl 18%|pl 28%
+  studia     Polish  (  9.1%) Pred: Finnish |en 21%|es  8%|fi 32%|nl 30%|pl  9%
+  powietrze  Polish  ( 25.6%) Pred: Spanish |en 26%|es 26%|fi 11%|nl 11%|pl 26%
+epoch 1 iteration 140 validation-accuracy 26.6%
+  noisy      English ( 15.2%) Pred: Spanish |en 15%|es 27%|fi 18%|nl 25%|pl 15%
+  cutie      English ( 23.1%) Pred: Polish  |en 23%|es 16%|fi 13%|nl 19%|pl 30%
+  jammed     English ( 24.5%) Pred: Finnish |en 24%|es 20%|fi 27%|nl 10%|pl 20%
+  ingleses   Spanish ( 30.3%)               |en 23%|es 30%|fi 15%|nl 21%|pl 10%
+  ejecutivo  Spanish ( 15.1%) Pred: Finnish |en 25%|es 15%|fi 27%|nl 19%|pl 14%
+  pierna     Spanish ( 16.0%) Pred: Polish  |en 16%|es 16%|fi 22%|nl 14%|pl 32%
+  rakastin   Finnish ( 27.7%) Pred: Polish  |en 13%|es 14%|fi 28%|nl 15%|pl 30%
+  korttia    Finnish ( 38.2%)               |en  8%|es 16%|fi 38%|nl 20%|pl 17%
+  syotavaa   Finnish ( 38.4%)               |en 10%|es 22%|fi 38%|nl 16%|pl 13%
+  leveren    Dutch   ( 24.4%)               |en 22%|es 19%|fi 18%|nl 24%|pl 17%
+  haren      Dutch   ( 29.6%)               |en 22%|es 12%|fi 21%|nl 30%|pl 15%
+  weggelopen Dutch   ( 13.9%) Pred: English |en 30%|es 30%|fi 13%|nl 14%|pl 13%
+  poddac     Polish  ( 27.6%)               |en 23%|es 19%|fi 13%|nl 18%|pl 28%
+  studia     Polish  ( 10.6%) Pred: Dutch   |en 20%|es  8%|fi 27%|nl 33%|pl 11%
+  powietrze  Polish  ( 27.0%)               |en 25%|es 26%|fi 10%|nl 12%|pl 27%
+epoch 1 iteration 168 validation-accuracy 30.0%
+  noisy      English ( 16.4%) Pred: Dutch   |en 16%|es 26%|fi 16%|nl 28%|pl 14%
+  cutie      English ( 24.1%) Pred: Polish  |en 24%|es 16%|fi 13%|nl 21%|pl 26%
+  jammed     English ( 25.3%) Pred: Finnish |en 25%|es 20%|fi 27%|nl  9%|pl 19%
+  ingleses   Spanish ( 34.4%)               |en 24%|es 34%|fi 10%|nl 23%|pl  9%
+  ejecutivo  Spanish ( 15.7%) Pred: English |en 31%|es 16%|fi 17%|nl 22%|pl 15%
+  pierna     Spanish ( 17.1%) Pred: Polish  |en 17%|es 17%|fi 20%|nl 18%|pl 28%
+  rakastin   Finnish ( 32.7%)               |en 11%|es 14%|fi 33%|nl 13%|pl 30%
+  korttia    Finnish ( 34.7%)               |en  8%|es 20%|fi 35%|nl 21%|pl 16%
+  syotavaa   Finnish ( 45.4%)               |en  8%|es 20%|fi 45%|nl 13%|pl 13%
+  leveren    Dutch   ( 23.1%) Pred: English |en 24%|es 20%|fi 16%|nl 23%|pl 16%
+  haren      Dutch   ( 30.3%)               |en 22%|es 13%|fi 21%|nl 30%|pl 14%
+  weggelopen Dutch   ( 15.0%) Pred: English |en 33%|es 31%|fi  8%|nl 15%|pl 13%
+  poddac     Polish  ( 27.1%)               |en 22%|es 20%|fi 11%|nl 20%|pl 27%
+  studia     Polish  ( 12.2%) Pred: Dutch   |en 19%|es  8%|fi 28%|nl 32%|pl 12%
+  powietrze  Polish  ( 23.1%) Pred: Spanish |en 25%|es 29%|fi  9%|nl 14%|pl 23%
+epoch 1 iteration 196 validation-accuracy 31.8%
+  noisy      English ( 19.0%) Pred: Dutch   |en 19%|es 25%|fi 14%|nl 29%|pl 12%
+  cutie      English ( 24.9%)               |en 25%|es 17%|fi 13%|nl 20%|pl 25%
+  jammed     English ( 27.7%)               |en 28%|es 19%|fi 24%|nl 11%|pl 19%
+  ingleses   Spanish ( 28.2%) Pred: Dutch   |en 20%|es 28%|fi 15%|nl 29%|pl  7%
+  ejecutivo  Spanish ( 14.4%) Pred: English |en 33%|es 14%|fi 16%|nl 24%|pl 12%
+  pierna     Spanish ( 16.3%) Pred: Polish  |en 21%|es 16%|fi 18%|nl 19%|pl 26%
+  rakastin   Finnish ( 36.2%)               |en  8%|es 12%|fi 36%|nl 16%|pl 27%
+  korttia    Finnish ( 33.0%)               |en  8%|es 19%|fi 33%|nl 23%|pl 17%
+  syotavaa   Finnish ( 49.9%)               |en  6%|es 17%|fi 50%|nl 11%|pl 16%
+  leveren    Dutch   ( 26.0%)               |en 20%|es 16%|fi 22%|nl 26%|pl 17%
+  haren      Dutch   ( 31.1%)               |en 24%|es 11%|fi 21%|nl 31%|pl 13%
+  weggelopen Dutch   ( 17.8%) Pred: English |en 35%|es 26%|fi 11%|nl 18%|pl 10%
+  poddac     Polish  ( 23.2%) Pred: English |en 26%|es 18%|fi 11%|nl 22%|pl 23%
+  studia     Polish  ( 10.4%) Pred: Dutch   |en 18%|es  9%|fi 30%|nl 32%|pl 10%
+  powietrze  Polish  ( 18.2%) Pred: English |en 30%|es 28%|fi  9%|nl 15%|pl 18%
+epoch 1 iteration 221 validation-accuracy 31.6%
+  noisy      English ( 19.3%) Pred: Dutch   |en 19%|es 26%|fi 15%|nl 28%|pl 12%
+  cutie      English ( 22.7%) Pred: Polish  |en 23%|es 19%|fi 13%|nl 20%|pl 26%
+  jammed     English ( 28.4%)               |en 28%|es 18%|fi 24%|nl 12%|pl 18%
+  ingleses   Spanish ( 26.9%)               |en 25%|es 27%|fi 16%|nl 25%|pl  7%
+  ejecutivo  Spanish ( 13.1%) Pred: English |en 32%|es 13%|fi 19%|nl 25%|pl 11%
+  pierna     Spanish ( 16.5%) Pred: Polish  |en 22%|es 16%|fi 19%|nl 19%|pl 24%
+  rakastin   Finnish ( 28.6%)               |en 11%|es 13%|fi 29%|nl 19%|pl 27%
+  korttia    Finnish ( 27.7%)               |en  9%|es 19%|fi 28%|nl 24%|pl 19%
+  syotavaa   Finnish ( 48.4%)               |en  6%|es 17%|fi 48%|nl 12%|pl 17%
+  leveren    Dutch   ( 23.6%)               |en 22%|es 16%|fi 23%|nl 24%|pl 15%
+  haren      Dutch   ( 32.0%)               |en 22%|es 11%|fi 23%|nl 32%|pl 13%
+  weggelopen Dutch   ( 15.8%) Pred: English |en 30%|es 29%|fi 15%|nl 16%|pl 10%
+  poddac     Polish  ( 20.9%) Pred: English |en 25%|es 19%|fi 11%|nl 25%|pl 21%
+  studia     Polish  ( 10.8%) Pred: Dutch   |en 20%|es 10%|fi 27%|nl 32%|pl 11%
+  powietrze  Polish  ( 17.8%) Pred: English |en 35%|es 26%|fi  8%|nl 13%|pl 18%
+epoch 1 iteration 248 validation-accuracy 32.4%
+  noisy      English ( 19.3%) Pred: Dutch   |en 19%|es 24%|fi 14%|nl 31%|pl 12%
+  cutie      English ( 23.0%) Pred: Polish  |en 23%|es 17%|fi 13%|nl 21%|pl 25%
+  jammed     English ( 23.4%) Pred: Finnish |en 23%|es 19%|fi 27%|nl 10%|pl 21%
+  ingleses   Spanish ( 33.0%)               |en 29%|es 33%|fi  9%|nl 23%|pl  5%
+  ejecutivo  Spanish ( 11.1%) Pred: Dutch   |en 32%|es 11%|fi 12%|nl 37%|pl  8%
+  pierna     Spanish ( 16.6%) Pred: English |en 23%|es 17%|fi 16%|nl 22%|pl 23%
+  rakastin   Finnish ( 27.9%)               |en 13%|es 17%|fi 28%|nl 19%|pl 22%
+  korttia    Finnish ( 29.1%)               |en 11%|es 20%|fi 29%|nl 23%|pl 17%
+  syotavaa   Finnish ( 43.0%)               |en  8%|es 22%|fi 43%|nl 13%|pl 15%
+  leveren    Dutch   ( 22.7%) Pred: English |en 26%|es 21%|fi 17%|nl 23%|pl 14%
+  haren      Dutch   ( 33.8%)               |en 24%|es 11%|fi 19%|nl 34%|pl 12%
+  weggelopen Dutch   ( 20.8%) Pred: English |en 33%|es 29%|fi  9%|nl 21%|pl  8%
+  poddac     Polish  ( 20.0%) Pred: Dutch   |en 24%|es 17%|fi 11%|nl 28%|pl 20%
+  studia     Polish  ( 10.6%) Pred: Dutch   |en 22%|es 10%|fi 22%|nl 36%|pl 11%
+  powietrze  Polish  ( 20.5%) Pred: English |en 32%|es 26%|fi  6%|nl 14%|pl 21%
+epoch 1 iteration 273 validation-accuracy 34.6%
+  noisy      English ( 20.2%) Pred: Dutch   |en 20%|es 24%|fi 14%|nl 29%|pl 13%
+  cutie      English ( 21.1%) Pred: Polish  |en 21%|es 19%|fi 13%|nl 20%|pl 27%
+  jammed     English ( 21.2%) Pred: Finnish |en 21%|es 17%|fi 28%|nl  9%|pl 25%
+  ingleses   Spanish ( 30.4%) Pred: English |en 31%|es 30%|fi 10%|nl 26%|pl  3%
+  ejecutivo  Spanish ( 11.6%) Pred: Dutch   |en 31%|es 12%|fi 12%|nl 40%|pl  6%
+  pierna     Spanish ( 18.3%) Pred: English |en 24%|es 18%|fi 16%|nl 22%|pl 20%
+  rakastin   Finnish ( 36.5%)               |en 12%|es 15%|fi 37%|nl 16%|pl 20%
+  korttia    Finnish ( 32.3%)               |en 10%|es 18%|fi 32%|nl 20%|pl 19%
+  syotavaa   Finnish ( 48.9%)               |en  6%|es 18%|fi 49%|nl 10%|pl 18%
+  leveren    Dutch   ( 20.5%) Pred: Finnish |en 19%|es 20%|fi 26%|nl 20%|pl 14%
+  haren      Dutch   ( 32.0%)               |en 23%|es 12%|fi 20%|nl 32%|pl 12%
+  weggelopen Dutch   ( 19.9%) Pred: English |en 29%|es 26%|fi 16%|nl 20%|pl 10%
+  poddac     Polish  ( 17.6%) Pred: Dutch   |en 25%|es 19%|fi 12%|nl 26%|pl 18%
+  studia     Polish  ( 11.6%) Pred: Dutch   |en 24%|es 11%|fi 20%|nl 33%|pl 12%
+  powietrze  Polish  ( 20.0%) Pred: English |en 33%|es 27%|fi  7%|nl 13%|pl 20%
+epoch 1 iteration 299 validation-accuracy 34.8%
+  noisy      English ( 18.2%) Pred: Dutch   |en 18%|es 23%|fi 15%|nl 29%|pl 15%
+  cutie      English ( 20.3%) Pred: Polish  |en 20%|es 19%|fi 14%|nl 19%|pl 28%
+  jammed     English ( 18.4%) Pred: Finnish |en 18%|es 14%|fi 32%|nl  9%|pl 28%
+  ingleses   Spanish ( 29.0%) Pred: English |en 31%|es 29%|fi  7%|nl 31%|pl  2%
+  ejecutivo  Spanish ( 11.9%) Pred: Dutch   |en 31%|es 12%|fi  8%|nl 44%|pl  4%
+  pierna     Spanish ( 19.0%) Pred: English |en 23%|es 19%|fi 16%|nl 19%|pl 23%
+  rakastin   Finnish ( 41.2%)               |en  9%|es 14%|fi 41%|nl 13%|pl 23%
+  korttia    Finnish ( 38.4%)               |en  8%|es 17%|fi 38%|nl 13%|pl 24%
+  syotavaa   Finnish ( 58.0%)               |en  3%|es 12%|fi 58%|nl  7%|pl 19%
+  leveren    Dutch   ( 19.4%) Pred: Finnish |en 18%|es 22%|fi 27%|nl 19%|pl 14%
+  haren      Dutch   ( 31.4%)               |en 23%|es 12%|fi 21%|nl 31%|pl 13%
+  weggelopen Dutch   ( 18.0%) Pred: Spanish |en 26%|es 28%|fi 18%|nl 18%|pl 10%
+  poddac     Polish  ( 20.2%) Pred: English |en 23%|es 21%|fi 12%|nl 23%|pl 20%
+  studia     Polish  ( 12.7%) Pred: Dutch   |en 23%|es 11%|fi 21%|nl 32%|pl 13%
+  powietrze  Polish  ( 25.0%) Pred: Spanish |en 26%|es 27%|fi  8%|nl 14%|pl 25%
+epoch 1 iteration 324 validation-accuracy 36.0%
+  noisy      English ( 19.3%) Pred: Dutch   |en 19%|es 24%|fi 15%|nl 27%|pl 14%
+  cutie      English ( 18.7%) Pred: Polish  |en 19%|es 19%|fi 14%|nl 17%|pl 31%
+  jammed     English ( 15.4%) Pred: Finnish |en 15%|es 13%|fi 35%|nl  8%|pl 28%
+  ingleses   Spanish ( 25.1%) Pred: English |en 37%|es 25%|fi 10%|nl 26%|pl  2%
+  ejecutivo  Spanish ( 12.1%) Pred: English |en 39%|es 12%|fi  8%|nl 37%|pl  4%
+  pierna     Spanish ( 21.1%) Pred: English |en 26%|es 21%|fi 14%|nl 19%|pl 20%
+  rakastin   Finnish ( 49.6%)               |en  8%|es 13%|fi 50%|nl 11%|pl 19%
+  korttia    Finnish ( 36.2%)               |en  9%|es 18%|fi 36%|nl 12%|pl 24%
+  syotavaa   Finnish ( 58.7%)               |en  2%|es 11%|fi 59%|nl  6%|pl 23%
+  leveren    Dutch   ( 14.6%) Pred: Finnish |en 14%|es 18%|fi 36%|nl 15%|pl 17%
+  haren      Dutch   ( 28.3%)               |en 24%|es 12%|fi 24%|nl 28%|pl 12%
+  weggelopen Dutch   ( 12.6%) Pred: Finnish |en 20%|es 25%|fi 27%|nl 13%|pl 15%
+  poddac     Polish  ( 17.7%) Pred: English |en 25%|es 21%|fi 12%|nl 24%|pl 18%
+  studia     Polish  ( 12.3%) Pred: Dutch   |en 25%|es 10%|fi 23%|nl 29%|pl 12%
+  powietrze  Polish  ( 22.0%) Pred: English |en 30%|es 28%|fi  7%|nl 12%|pl 22%
+epoch 1 iteration 350 validation-accuracy 34.6%
+  noisy      English ( 20.4%) Pred: Dutch   |en 20%|es 22%|fi 19%|nl 26%|pl 13%
+  cutie      English ( 19.5%) Pred: Polish  |en 19%|es 18%|fi 13%|nl 17%|pl 32%
+  jammed     English ( 13.1%) Pred: Finnish |en 13%|es 12%|fi 38%|nl  8%|pl 28%
+  ingleses   Spanish ( 19.7%) Pred: English |en 40%|es 20%|fi  9%|nl 30%|pl  1%
+  ejecutivo  Spanish (  7.8%) Pred: English |en 52%|es  8%|fi  4%|nl 34%|pl  1%
+  pierna     Spanish ( 19.4%) Pred: English |en 34%|es 19%|fi 13%|nl 19%|pl 15%
+  rakastin   Finnish ( 36.5%)               |en 16%|es 14%|fi 36%|nl 23%|pl 11%
+  korttia    Finnish ( 34.7%)               |en 12%|es 19%|fi 35%|nl 13%|pl 22%
+  syotavaa   Finnish ( 61.0%)               |en  1%|es  8%|fi 61%|nl  4%|pl 26%
+  leveren    Dutch   ( 21.7%) Pred: Finnish |en 21%|es 20%|fi 25%|nl 22%|pl 11%
+  haren      Dutch   ( 32.9%)               |en 30%|es 12%|fi 17%|nl 33%|pl  9%
+  weggelopen Dutch   ( 14.2%) Pred: English |en 29%|es 24%|fi 22%|nl 14%|pl 11%
+  poddac     Polish  ( 13.1%) Pred: English |en 32%|es 19%|fi 11%|nl 25%|pl 13%
+  studia     Polish  ( 13.2%) Pred: Dutch   |en 21%|es  8%|fi 27%|nl 30%|pl 13%
+  powietrze  Polish  ( 13.1%) Pred: English |en 45%|es 26%|fi  4%|nl 12%|pl 13%
+epoch 1 iteration 376 validation-accuracy 34.0%
+  noisy      English ( 15.9%) Pred: Finnish |en 16%|es 21%|fi 25%|nl 23%|pl 15%
+  cutie      English ( 15.8%) Pred: Polish  |en 16%|es 18%|fi 16%|nl 16%|pl 35%
+  jammed     English ( 13.4%) Pred: Finnish |en 13%|es 11%|fi 37%|nl  8%|pl 31%
+  ingleses   Spanish ( 24.6%) Pred: Dutch   |en 28%|es 25%|fi 12%|nl 32%|pl  3%
+  ejecutivo  Spanish ( 14.2%) Pred: English |en 34%|es 14%|fi 14%|nl 33%|pl  5%
+  pierna     Spanish ( 19.6%) Pred: English |en 24%|es 20%|fi 16%|nl 21%|pl 20%
+  rakastin   Finnish ( 33.4%)               |en 14%|es 14%|fi 33%|nl 25%|pl 13%
+  korttia    Finnish ( 36.3%)               |en 10%|es 19%|fi 36%|nl 13%|pl 22%
+  syotavaa   Finnish ( 51.3%)               |en  5%|es 13%|fi 51%|nl 12%|pl 19%
+  leveren    Dutch   ( 28.0%) Pred: English |en 34%|es 22%|fi 10%|nl 28%|pl  6%
+  haren      Dutch   ( 35.9%)               |en 27%|es 13%|fi 15%|nl 36%|pl  9%
+  weggelopen Dutch   ( 17.9%) Pred: English |en 43%|es 24%|fi 10%|nl 18%|pl  5%
+  poddac     Polish  ( 16.5%) Pred: Dutch   |en 24%|es 20%|fi 14%|nl 25%|pl 16%
+  studia     Polish  (  8.1%) Pred: Dutch   |en 25%|es  9%|fi 18%|nl 40%|pl  8%
+  powietrze  Polish  ( 33.9%)               |en 22%|es 24%|fi  8%|nl 13%|pl 34%
+epoch 1 iteration 401 validation-accuracy 37.0%
+  noisy      English ( 16.2%) Pred: Dutch   |en 16%|es 23%|fi 23%|nl 23%|pl 16%
+  cutie      English ( 20.7%) Pred: Polish  |en 21%|es 20%|fi 13%|nl 16%|pl 30%
+  jammed     English ( 16.8%) Pred: Finnish |en 17%|es 10%|fi 36%|nl  9%|pl 27%
+  ingleses   Spanish ( 33.3%)               |en 28%|es 33%|fi  9%|nl 27%|pl  3%
+  ejecutivo  Spanish ( 21.2%) Pred: English |en 34%|es 21%|fi 12%|nl 28%|pl  6%
+  pierna     Spanish ( 21.6%) Pred: English |en 24%|es 22%|fi 14%|nl 21%|pl 19%
+  rakastin   Finnish ( 34.5%)               |en 12%|es 19%|fi 35%|nl 18%|pl 17%
+  korttia    Finnish ( 32.5%)               |en 12%|es 20%|fi 33%|nl 14%|pl 21%
+  syotavaa   Finnish ( 52.4%)               |en  3%|es 11%|fi 52%|nl  8%|pl 26%
+  leveren    Dutch   ( 22.7%) Pred: Spanish |en 29%|es 32%|fi 10%|nl 23%|pl  6%
+  haren      Dutch   ( 31.1%)               |en 29%|es 16%|fi 14%|nl 31%|pl  9%
+  weggelopen Dutch   ( 16.5%) Pred: English |en 40%|es 27%|fi  9%|nl 17%|pl  7%
+  poddac     Polish  ( 16.3%) Pred: Dutch   |en 23%|es 21%|fi 13%|nl 26%|pl 16%
+  studia     Polish  ( 11.0%) Pred: Dutch   |en 25%|es 10%|fi 20%|nl 34%|pl 11%
+  powietrze  Polish  ( 22.2%) Pred: English |en 33%|es 27%|fi  5%|nl 12%|pl 22%
+epoch 1 iteration 427 validation-accuracy 35.6%
+  noisy      English ( 16.6%) Pred: Finnish |en 17%|es 21%|fi 22%|nl 22%|pl 18%
+  cutie      English ( 17.8%) Pred: Polish  |en 18%|es 20%|fi 13%|nl 15%|pl 35%
+  jammed     English ( 15.6%) Pred: Finnish |en 16%|es 10%|fi 39%|nl  9%|pl 26%
+  ingleses   Spanish ( 35.5%)               |en 29%|es 36%|fi  8%|nl 25%|pl  3%
+  ejecutivo  Spanish ( 27.6%) Pred: English |en 33%|es 28%|fi  8%|nl 26%|pl  6%
+  pierna     Spanish ( 21.5%) Pred: Polish  |en 19%|es 21%|fi 15%|nl 18%|pl 27%
+  rakastin   Finnish ( 26.9%)               |en 19%|es 23%|fi 27%|nl 18%|pl 13%
+  korttia    Finnish ( 32.1%)               |en 11%|es 17%|fi 32%|nl 12%|pl 28%
+  syotavaa   Finnish ( 61.3%)               |en  2%|es  8%|fi 61%|nl  5%|pl 23%
+  leveren    Dutch   ( 21.1%) Pred: English |en 39%|es 30%|fi  6%|nl 21%|pl  4%
+  haren      Dutch   ( 31.0%)               |en 30%|es 17%|fi 13%|nl 31%|pl  9%
+  weggelopen Dutch   ( 14.1%) Pred: English |en 31%|es 28%|fi 12%|nl 14%|pl 15%
+  poddac     Polish  ( 22.1%) Pred: Dutch   |en 22%|es 19%|fi 13%|nl 24%|pl 22%
+  studia     Polish  ( 11.7%) Pred: Dutch   |en 24%|es 10%|fi 19%|nl 36%|pl 12%
+  powietrze  Polish  ( 46.3%)               |en 14%|es 26%|fi  6%|nl  7%|pl 46%
+epoch 1 iteration 450 validation-accuracy 37.8%
+  noisy      English ( 18.3%) Pred: Dutch   |en 18%|es 22%|fi 21%|nl 23%|pl 15%
+  cutie      English ( 18.3%) Pred: Polish  |en 18%|es 20%|fi 12%|nl 15%|pl 35%
+  jammed     English ( 21.3%) Pred: Finnish |en 21%|es 13%|fi 31%|nl 10%|pl 24%
+  ingleses   Spanish ( 32.8%)               |en 24%|es 33%|fi  9%|nl 31%|pl  3%
+  ejecutivo  Spanish ( 25.7%) Pred: English |en 29%|es 26%|fi  9%|nl 29%|pl  7%
+  pierna     Spanish ( 17.9%) Pred: Polish  |en 18%|es 18%|fi 16%|nl 17%|pl 31%
+  rakastin   Finnish ( 26.1%)               |en 17%|es 23%|fi 26%|nl 21%|pl 14%
+  korttia    Finnish ( 31.1%)               |en 14%|es 18%|fi 31%|nl 15%|pl 22%
+  syotavaa   Finnish ( 59.6%)               |en  2%|es  7%|fi 60%|nl  3%|pl 28%
+  leveren    Dutch   ( 27.5%) Pred: Spanish |en 29%|es 30%|fi  7%|nl 27%|pl  5%
+  haren      Dutch   ( 35.6%)               |en 26%|es 16%|fi 13%|nl 36%|pl  8%
+  weggelopen Dutch   ( 11.6%) Pred: Spanish |en 25%|es 27%|fi 14%|nl 12%|pl 23%
+  poddac     Polish  ( 23.2%) Pred: Dutch   |en 21%|es 19%|fi 13%|nl 24%|pl 23%
+  studia     Polish  ( 13.2%) Pred: Dutch   |en 20%|es 10%|fi 24%|nl 33%|pl 13%
+  powietrze  Polish  ( 55.4%)               |en 12%|es 20%|fi  7%|nl  6%|pl 55%
+epoch 1 iteration 471 validation-accuracy 39.4%
+  noisy      English ( 19.3%) Pred: Finnish |en 19%|es 22%|fi 23%|nl 22%|pl 14%
+  cutie      English ( 16.8%) Pred: Polish  |en 17%|es 21%|fi 12%|nl 14%|pl 36%
+  jammed     English ( 18.5%) Pred: Finnish |en 19%|es 11%|fi 36%|nl 10%|pl 25%
+  ingleses   Spanish ( 29.6%) Pred: Dutch   |en 27%|es 30%|fi  7%|nl 33%|pl  3%
+  ejecutivo  Spanish ( 25.6%) Pred: Dutch   |en 27%|es 26%|fi  7%|nl 34%|pl  6%
+  pierna     Spanish ( 14.6%) Pred: Polish  |en 12%|es 15%|fi 18%|nl 12%|pl 43%
+  rakastin   Finnish ( 30.7%)               |en 15%|es 19%|fi 31%|nl 19%|pl 16%
+  korttia    Finnish ( 36.3%)               |en  9%|es 14%|fi 36%|nl 10%|pl 29%
+  syotavaa   Finnish ( 58.4%)               |en  1%|es  3%|fi 58%|nl  1%|pl 36%
+  leveren    Dutch   ( 32.6%)               |en 32%|es 27%|fi  6%|nl 33%|pl  3%
+  haren      Dutch   ( 39.5%)               |en 25%|es 16%|fi 13%|nl 39%|pl  7%
+  weggelopen Dutch   ( 11.2%) Pred: Polish  |en 21%|es 25%|fi 16%|nl 11%|pl 27%
+  poddac     Polish  ( 30.3%)               |en 16%|es 17%|fi 14%|nl 21%|pl 30%
+  studia     Polish  ( 13.8%) Pred: Dutch   |en 18%|es 10%|fi 29%|nl 29%|pl 14%
+  powietrze  Polish  ( 89.9%)               |en  1%|es  4%|fi  4%|nl  1%|pl 90%
+epoch 1 iteration 496 validation-accuracy 41.0%
+  noisy      English ( 20.7%) Pred: Dutch   |en 21%|es 21%|fi 22%|nl 23%|pl 13%
+  cutie      English ( 20.7%) Pred: Polish  |en 21%|es 21%|fi 11%|nl 17%|pl 31%
+  jammed     English ( 18.5%) Pred: Finnish |en 18%|es 10%|fi 36%|nl  9%|pl 26%
+  ingleses   Spanish ( 25.3%) Pred: Dutch   |en 24%|es 25%|fi  6%|nl 44%|pl  2%
+  ejecutivo  Spanish ( 21.4%) Pred: Dutch   |en 24%|es 21%|fi  7%|nl 43%|pl  4%
+  pierna     Spanish ( 17.3%) Pred: Polish  |en 20%|es 17%|fi 17%|nl 20%|pl 25%
+  rakastin   Finnish ( 36.5%)               |en 11%|es 15%|fi 37%|nl 14%|pl 23%
+  korttia    Finnish ( 34.2%)               |en 15%|es 17%|fi 34%|nl 14%|pl 20%
+  syotavaa   Finnish ( 62.0%)               |en  3%|es  7%|fi 62%|nl  4%|pl 24%
+  leveren    Dutch   ( 37.6%)               |en 25%|es 26%|fi  7%|nl 38%|pl  4%
+  haren      Dutch   ( 38.5%)               |en 22%|es 15%|fi 17%|nl 38%|pl  8%
+  weggelopen Dutch   ( 24.7%) Pred: English |en 32%|es 27%|fi  8%|nl 25%|pl  8%
+  poddac     Polish  ( 21.6%) Pred: Dutch   |en 19%|es 19%|fi 14%|nl 27%|pl 22%
+  studia     Polish  (  8.5%) Pred: Dutch   |en 20%|es 10%|fi 26%|nl 36%|pl  8%
+  powietrze  Polish  ( 54.5%)               |en 15%|es 18%|fi  5%|nl  7%|pl 54%
+epoch 1 iteration 521 validation-accuracy 43.4%
+  noisy      English ( 19.7%) Pred: Finnish |en 20%|es 21%|fi 24%|nl 21%|pl 14%
+  cutie      English ( 18.8%) Pred: Polish  |en 19%|es 20%|fi 12%|nl 17%|pl 32%
+  jammed     English ( 21.9%) Pred: Finnish |en 22%|es 10%|fi 33%|nl 10%|pl 25%
+  ingleses   Spanish ( 37.5%)               |en 27%|es 37%|fi  5%|nl 29%|pl  2%
+  ejecutivo  Spanish ( 27.5%) Pred: Dutch   |en 25%|es 28%|fi  7%|nl 35%|pl  5%
+  pierna     Spanish ( 17.7%) Pred: Polish  |en 17%|es 18%|fi 19%|nl 16%|pl 30%
+  rakastin   Finnish ( 38.7%)               |en 11%|es 16%|fi 39%|nl 11%|pl 24%
+  korttia    Finnish ( 37.9%)               |en 13%|es 14%|fi 38%|nl 16%|pl 19%
+  syotavaa   Finnish ( 63.0%)               |en  4%|es  6%|fi 63%|nl  5%|pl 22%
+  leveren    Dutch   ( 28.0%) Pred: Spanish |en 26%|es 38%|fi  5%|nl 28%|pl  3%
+  haren      Dutch   ( 35.0%)               |en 23%|es 17%|fi 16%|nl 35%|pl  8%
+  weggelopen Dutch   ( 20.0%) Pred: Spanish |en 31%|es 33%|fi  6%|nl 20%|pl 10%
+  poddac     Polish  ( 24.7%) Pred: Dutch   |en 17%|es 18%|fi 15%|nl 26%|pl 25%
+  studia     Polish  (  7.3%) Pred: Dutch   |en 19%|es 11%|fi 27%|nl 35%|pl  7%
+  powietrze  Polish  ( 64.4%)               |en 12%|es 13%|fi  5%|nl  6%|pl 64%
+epoch 1 iteration 547 validation-accuracy 39.8%
+  noisy      English ( 20.8%) Pred: Dutch   |en 21%|es 22%|fi 21%|nl 23%|pl 12%
+  cutie      English ( 22.2%) Pred: Polish  |en 22%|es 20%|fi 10%|nl 18%|pl 29%
+  jammed     English ( 26.3%) Pred: Finnish |en 26%|es 10%|fi 32%|nl  8%|pl 23%
+  ingleses   Spanish ( 32.1%) Pred: Dutch   |en 22%|es 32%|fi  3%|nl 42%|pl  1%
+  ejecutivo  Spanish ( 22.6%) Pred: Dutch   |en 21%|es 23%|fi  5%|nl 47%|pl  4%
+  pierna     Spanish ( 18.6%) Pred: Dutch   |en 19%|es 19%|fi 15%|nl 24%|pl 23%
+  rakastin   Finnish ( 31.7%)               |en 13%|es 20%|fi 32%|nl 16%|pl 20%
+  korttia    Finnish ( 32.1%)               |en 16%|es 19%|fi 32%|nl 18%|pl 15%
+  syotavaa   Finnish ( 65.4%)               |en  4%|es  6%|fi 65%|nl  5%|pl 19%
+  leveren    Dutch   ( 39.3%)               |en 20%|es 32%|fi  5%|nl 39%|pl  4%
+  haren      Dutch   ( 39.9%)               |en 23%|es 16%|fi 14%|nl 40%|pl  8%
+  weggelopen Dutch   ( 27.4%) Pred: English |en 32%|es 26%|fi  6%|nl 27%|pl  8%
+  poddac     Polish  ( 19.7%) Pred: Dutch   |en 18%|es 20%|fi 12%|nl 31%|pl 20%
+  studia     Polish  (  6.0%) Pred: Dutch   |en 20%|es 13%|fi 23%|nl 39%|pl  6%
+  powietrze  Polish  ( 43.4%)               |en 23%|es 19%|fi  4%|nl 11%|pl 43%
+epoch 1 iteration 572 validation-accuracy 45.6%
+  noisy      English ( 19.6%) Pred: Finnish |en 20%|es 20%|fi 25%|nl 21%|pl 15%
+  cutie      English ( 20.6%) Pred: Polish  |en 21%|es 21%|fi 11%|nl 17%|pl 31%
+  jammed     English ( 25.4%) Pred: Finnish |en 25%|es  8%|fi 33%|nl  7%|pl 26%
+  ingleses   Spanish ( 30.6%) Pred: Dutch   |en 23%|es 31%|fi 10%|nl 33%|pl  3%
+  ejecutivo  Spanish ( 24.1%) Pred: Dutch   |en 24%|es 24%|fi  5%|nl 39%|pl  7%
+  pierna     Spanish ( 15.3%) Pred: Polish  |en 18%|es 15%|fi 18%|nl 21%|pl 28%
+  rakastin   Finnish ( 52.2%)               |en  7%|es 11%|fi 52%|nl  8%|pl 22%
+  korttia    Finnish ( 46.9%)               |en 11%|es 14%|fi 47%|nl 12%|pl 16%
+  syotavaa   Finnish ( 77.3%)               |en  3%|es  3%|fi 77%|nl  3%|pl 14%
+  leveren    Dutch   ( 35.6%)               |en 20%|es 28%|fi 10%|nl 36%|pl  7%
+  haren      Dutch   ( 34.5%)               |en 25%|es 15%|fi 17%|nl 34%|pl  9%
+  weggelopen Dutch   ( 26.8%) Pred: English |en 30%|es 26%|fi  6%|nl 27%|pl 12%
+  poddac     Polish  ( 25.1%) Pred: Dutch   |en 16%|es 18%|fi 14%|nl 28%|pl 25%
+  studia     Polish  (  6.9%) Pred: Finnish |en 15%|es 10%|fi 40%|nl 28%|pl  7%
+  powietrze  Polish  ( 50.4%)               |en 23%|es 15%|fi  4%|nl  8%|pl 50%
+epoch 1 iteration 597 validation-accuracy 45.4%
+  noisy      English ( 21.3%) Pred: Finnish |en 21%|es 19%|fi 23%|nl 21%|pl 16%
+  cutie      English ( 21.3%) Pred: Polish  |en 21%|es 20%|fi 11%|nl 16%|pl 32%
+  jammed     English ( 27.0%) Pred: Finnish |en 27%|es  9%|fi 31%|nl  9%|pl 24%
+  ingleses   Spanish ( 28.6%) Pred: Dutch   |en 23%|es 29%|fi 10%|nl 35%|pl  4%
+  ejecutivo  Spanish ( 18.8%) Pred: Dutch   |en 26%|es 19%|fi  9%|nl 37%|pl  9%
+  pierna     Spanish ( 14.8%) Pred: Polish  |en 22%|es 15%|fi 18%|nl 22%|pl 23%
+  rakastin   Finnish ( 60.0%)               |en  5%|es 10%|fi 60%|nl  7%|pl 19%
+  korttia    Finnish ( 55.9%)               |en  9%|es 12%|fi 56%|nl  9%|pl 14%
+  syotavaa   Finnish ( 85.9%)               |en  2%|es  2%|fi 86%|nl  2%|pl  8%
+  leveren    Dutch   ( 36.6%)               |en 21%|es 24%|fi 11%|nl 37%|pl  7%
+  haren      Dutch   ( 35.4%)               |en 28%|es 13%|fi 16%|nl 35%|pl  8%
+  weggelopen Dutch   ( 34.2%)               |en 34%|es 21%|fi  4%|nl 34%|pl  7%
+  poddac     Polish  ( 25.1%) Pred: Dutch   |en 18%|es 17%|fi 13%|nl 27%|pl 25%
+  studia     Polish  (  5.6%) Pred: Finnish |en 17%|es  8%|fi 44%|nl 26%|pl  6%
+  powietrze  Polish  ( 34.5%)               |en 31%|es 20%|fi  3%|nl 11%|pl 34%
+epoch 1 iteration 624 validation-accuracy 46.4%
+  noisy      English ( 20.3%) Pred: Finnish |en 20%|es 21%|fi 22%|nl 20%|pl 17%
+  cutie      English ( 18.7%) Pred: Polish  |en 19%|es 19%|fi 13%|nl 15%|pl 35%
+  jammed     English ( 25.4%) Pred: Finnish |en 25%|es  7%|fi 31%|nl  9%|pl 27%
+  ingleses   Spanish ( 32.5%) Pred: Dutch   |en 23%|es 32%|fi  6%|nl 35%|pl  3%
+  ejecutivo  Spanish ( 40.2%)               |en 22%|es 40%|fi  3%|nl 22%|pl 12%
+  pierna     Spanish ( 19.0%) Pred: Polish  |en 18%|es 19%|fi 13%|nl 16%|pl 34%
+  rakastin   Finnish ( 45.6%)               |en  8%|es 10%|fi 46%|nl 11%|pl 26%
+  korttia    Finnish ( 51.0%)               |en 13%|es 12%|fi 51%|nl 14%|pl 10%
+  syotavaa   Finnish ( 83.7%)               |en  3%|es  3%|fi 84%|nl  5%|pl  5%
+  leveren    Dutch   ( 43.0%)               |en 21%|es 27%|fi  5%|nl 43%|pl  4%
+  haren      Dutch   ( 37.2%)               |en 27%|es 16%|fi 12%|nl 37%|pl  8%
+  weggelopen Dutch   ( 29.7%) Pred: Spanish |en 27%|es 35%|fi  2%|nl 30%|pl  6%
+  poddac     Polish  ( 34.1%)               |en 15%|es 20%|fi 11%|nl 20%|pl 34%
+  studia     Polish  (  3.4%) Pred: Dutch   |en 19%|es  9%|fi 31%|nl 38%|pl  3%
+  powietrze  Polish  ( 66.9%)               |en 14%|es 11%|fi  3%|nl  5%|pl 67%
+epoch 1 iteration 649 validation-accuracy 47.2%
+  noisy      English ( 18.8%) Pred: Finnish |en 19%|es 19%|fi 23%|nl 18%|pl 22%
+  cutie      English ( 19.7%) Pred: Polish  |en 20%|es 18%|fi 11%|nl 18%|pl 34%
+  jammed     English ( 25.9%) Pred: Finnish |en 26%|es  6%|fi 38%|nl  8%|pl 23%
+  ingleses   Spanish ( 29.7%) Pred: Dutch   |en 22%|es 30%|fi  6%|nl 40%|pl  3%
+  ejecutivo  Spanish ( 39.3%)               |en 19%|es 39%|fi  3%|nl 32%|pl  7%
+  pierna     Spanish ( 20.5%) Pred: Polish  |en 20%|es 20%|fi 13%|nl 21%|pl 26%
+  rakastin   Finnish ( 61.7%)               |en  7%|es  8%|fi 62%|nl 10%|pl 13%
+  korttia    Finnish ( 59.1%)               |en 10%|es  9%|fi 59%|nl  8%|pl 14%
+  syotavaa   Finnish ( 94.2%)               |en  1%|es  1%|fi 94%|nl  2%|pl  2%
+  leveren    Dutch   ( 45.1%)               |en 17%|es 21%|fi 12%|nl 45%|pl  5%
+  haren      Dutch   ( 38.0%)               |en 27%|es 15%|fi 14%|nl 38%|pl  7%
+  weggelopen Dutch   ( 40.7%)               |en 20%|es 34%|fi  1%|nl 41%|pl  4%
+  poddac     Polish  ( 36.0%)               |en 14%|es 19%|fi 11%|nl 19%|pl 36%
+  studia     Polish  (  3.2%) Pred: Finnish |en 12%|es  7%|fi 47%|nl 30%|pl  3%
+  powietrze  Polish  ( 37.2%)               |en 30%|es 18%|fi  2%|nl 13%|pl 37%
+epoch 1 iteration 674 validation-accuracy 46.6%
+  noisy      English ( 18.2%) Pred: Dutch   |en 18%|es 21%|fi 20%|nl 21%|pl 20%
+  cutie      English ( 20.3%) Pred: Polish  |en 20%|es 18%|fi  9%|nl 19%|pl 33%
+  jammed     English ( 26.4%) Pred: Finnish |en 26%|es  7%|fi 35%|nl  8%|pl 23%
+  ingleses   Spanish ( 35.6%)               |en 21%|es 36%|fi  6%|nl 35%|pl  3%
+  ejecutivo  Spanish ( 29.1%)               |en 25%|es 29%|fi  3%|nl 29%|pl 14%
+  pierna     Spanish ( 24.3%) Pred: Dutch   |en 21%|es 24%|fi  9%|nl 25%|pl 20%
+  rakastin   Finnish ( 65.8%)               |en  5%|es  8%|fi 66%|nl  7%|pl 14%
+  korttia    Finnish ( 52.6%)               |en 10%|es  9%|fi 53%|nl  8%|pl 20%
+  syotavaa   Finnish ( 88.9%)               |en  2%|es  2%|fi 89%|nl  2%|pl  5%
+  leveren    Dutch   ( 32.1%)               |en 18%|es 24%|fi 16%|nl 32%|pl 10%
+  haren      Dutch   ( 34.4%)               |en 26%|es 17%|fi 15%|nl 34%|pl  8%
+  weggelopen Dutch   ( 34.4%) Pred: Spanish |en 24%|es 35%|fi  1%|nl 34%|pl  6%
+  poddac     Polish  ( 32.1%)               |en 14%|es 22%|fi  8%|nl 23%|pl 32%
+  studia     Polish  (  5.4%) Pred: Finnish |en 10%|es  7%|fi 53%|nl 23%|pl  5%
+  powietrze  Polish  ( 12.9%) Pred: English |en 35%|es 27%|fi  1%|nl 25%|pl 13%
+epoch 1 iteration 699 validation-accuracy 49.6%
+  noisy      English ( 18.6%) Pred: Dutch   |en 19%|es 21%|fi 20%|nl 21%|pl 19%
+  cutie      English ( 19.1%) Pred: Polish  |en 19%|es 18%|fi  9%|nl 20%|pl 34%
+  jammed     English ( 26.6%) Pred: Finnish |en 27%|es  9%|fi 37%|nl  9%|pl 19%
+  ingleses   Spanish ( 34.8%) Pred: Dutch   |en 20%|es 35%|fi  4%|nl 39%|pl  2%
+  ejecutivo  Spanish ( 28.3%) Pred: Dutch   |en 19%|es 28%|fi  1%|nl 41%|pl 10%
+  pierna     Spanish ( 24.1%) Pred: Dutch   |en 19%|es 24%|fi 10%|nl 27%|pl 20%
+  rakastin   Finnish ( 50.6%)               |en  9%|es 16%|fi 51%|nl 11%|pl 13%
+  korttia    Finnish ( 60.9%)               |en  8%|es  9%|fi 61%|nl  6%|pl 16%
+  syotavaa   Finnish ( 93.1%)               |en  1%|es  2%|fi 93%|nl  1%|pl  3%
+  leveren    Dutch   ( 40.6%)               |en 19%|es 30%|fi  5%|nl 41%|pl  6%
+  haren      Dutch   ( 38.0%)               |en 26%|es 18%|fi 12%|nl 38%|pl  6%
+  weggelopen Dutch   ( 50.1%)               |en 18%|es 26%|fi  0%|nl 50%|pl  5%
+  poddac     Polish  ( 36.7%)               |en 14%|es 20%|fi  7%|nl 23%|pl 37%
+  studia     Polish  (  4.1%) Pred: Finnish |en 11%|es  6%|fi 58%|nl 21%|pl  4%
+  powietrze  Polish  ( 21.9%) Pred: Dutch   |en 28%|es 19%|fi  1%|nl 29%|pl 22%
+epoch 1 iteration 723 validation-accuracy 49.6%
+  noisy      English ( 18.7%) Pred: Dutch   |en 19%|es 22%|fi 18%|nl 22%|pl 20%
+  cutie      English ( 19.3%) Pred: Polish  |en 19%|es 18%|fi  8%|nl 18%|pl 36%
+  jammed     English ( 29.3%) Pred: Finnish |en 29%|es  9%|fi 31%|nl 11%|pl 20%
+  ingleses   Spanish ( 35.1%) Pred: Dutch   |en 18%|es 35%|fi  3%|nl 41%|pl  2%
+  ejecutivo  Spanish ( 28.1%) Pred: Dutch   |en 19%|es 28%|fi  2%|nl 35%|pl 16%
+  pierna     Spanish ( 22.8%) Pred: Dutch   |en 19%|es 23%|fi 17%|nl 25%|pl 16%
+  rakastin   Finnish ( 61.6%)               |en  9%|es 11%|fi 62%|nl 10%|pl  9%
+  korttia    Finnish ( 42.5%)               |en 13%|es 12%|fi 42%|nl 10%|pl 23%
+  syotavaa   Finnish ( 86.4%)               |en  3%|es  3%|fi 86%|nl  3%|pl  5%
+  leveren    Dutch   ( 41.4%)               |en 18%|es 31%|fi  3%|nl 41%|pl  6%
+  haren      Dutch   ( 35.1%)               |en 24%|es 17%|fi 18%|nl 35%|pl  6%
+  weggelopen Dutch   ( 41.8%)               |en 19%|es 28%|fi  1%|nl 42%|pl 10%
+  poddac     Polish  ( 35.7%)               |en 14%|es 20%|fi 10%|nl 21%|pl 36%
+  studia     Polish  (  3.8%) Pred: Finnish |en 11%|es  8%|fi 55%|nl 23%|pl  4%
+  powietrze  Polish  ( 39.6%)               |en 20%|es 16%|fi  2%|nl 22%|pl 40%
+epoch 1 iteration 744 validation-accuracy 49.6%
+  noisy      English ( 19.4%) Pred: Dutch   |en 19%|es 21%|fi 18%|nl 22%|pl 20%
+  cutie      English ( 18.7%) Pred: Polish  |en 19%|es 18%|fi  9%|nl 18%|pl 37%
+  jammed     English ( 28.4%) Pred: Finnish |en 28%|es  9%|fi 31%|nl 10%|pl 22%
+  ingleses   Spanish ( 40.6%)               |en 16%|es 41%|fi  3%|nl 38%|pl  2%
+  ejecutivo  Spanish ( 31.7%) Pred: Dutch   |en 17%|es 32%|fi  2%|nl 33%|pl 17%
+  pierna     Spanish ( 24.0%)               |en 17%|es 24%|fi 15%|nl 23%|pl 20%
+  rakastin   Finnish ( 58.7%)               |en  9%|es 10%|fi 59%|nl  9%|pl 13%
+  korttia    Finnish ( 57.2%)               |en 10%|es  9%|fi 57%|nl  7%|pl 18%
+  syotavaa   Finnish ( 86.1%)               |en  3%|es  2%|fi 86%|nl  2%|pl  6%
+  leveren    Dutch   ( 39.5%)               |en 15%|es 36%|fi  3%|nl 40%|pl  7%
+  haren      Dutch   ( 35.7%)               |en 24%|es 18%|fi 15%|nl 36%|pl  7%
+  weggelopen Dutch   ( 37.8%) Pred: Spanish |en 12%|es 38%|fi  1%|nl 38%|pl 11%
+  poddac     Polish  ( 38.2%)               |en 13%|es 20%|fi  9%|nl 20%|pl 38%
+  studia     Polish  (  3.8%) Pred: Finnish |en 13%|es  7%|fi 54%|nl 22%|pl  4%
+  powietrze  Polish  ( 50.8%)               |en 15%|es 14%|fi  3%|nl 17%|pl 51%
+epoch 1 iteration 764 validation-accuracy 49.2%
+  noisy      English ( 19.5%) Pred: Dutch   |en 20%|es 20%|fi 19%|nl 24%|pl 18%
+  cutie      English ( 20.0%) Pred: Polish  |en 20%|es 17%|fi  9%|nl 18%|pl 36%
+  jammed     English ( 30.8%)               |en 31%|es 10%|fi 21%|nl 11%|pl 27%
+  ingleses   Spanish ( 32.6%) Pred: Dutch   |en 22%|es 33%|fi  5%|nl 40%|pl  1%
+  ejecutivo  Spanish ( 23.5%) Pred: Dutch   |en 24%|es 23%|fi  3%|nl 43%|pl  7%
+  pierna     Spanish ( 24.1%)               |en 20%|es 24%|fi 16%|nl 23%|pl 16%
+  rakastin   Finnish ( 52.4%)               |en 10%|es 14%|fi 52%|nl 11%|pl 13%
+  korttia    Finnish ( 57.1%)               |en  8%|es  8%|fi 57%|nl  7%|pl 20%
+  syotavaa   Finnish ( 74.0%)               |en  4%|es  4%|fi 74%|nl  3%|pl 16%
+  leveren    Dutch   ( 43.4%)               |en 19%|es 30%|fi  4%|nl 43%|pl  4%
+  haren      Dutch   ( 34.7%)               |en 27%|es 19%|fi 13%|nl 35%|pl  6%
+  weggelopen Dutch   ( 51.3%)               |en 21%|es 23%|fi  1%|nl 51%|pl  3%
+  poddac     Polish  ( 35.0%)               |en 15%|es 19%|fi  9%|nl 22%|pl 35%
+  studia     Polish  (  5.4%) Pred: Finnish |en 11%|es  7%|fi 59%|nl 18%|pl  5%
+  powietrze  Polish  ( 40.4%)               |en 20%|es 15%|fi  3%|nl 22%|pl 40%
+epoch 1 iteration 786 validation-accuracy 52.0%
+  noisy      English ( 18.5%) Pred: Dutch   |en 19%|es 20%|fi 20%|nl 22%|pl 19%
+  cutie      English ( 19.8%) Pred: Polish  |en 20%|es 20%|fi  9%|nl 19%|pl 32%
+  jammed     English ( 30.4%)               |en 30%|es  9%|fi 24%|nl 11%|pl 26%
+  ingleses   Spanish ( 32.2%) Pred: Dutch   |en 25%|es 32%|fi  6%|nl 34%|pl  2%
+  ejecutivo  Spanish ( 28.5%) Pred: Dutch   |en 25%|es 28%|fi  3%|nl 37%|pl  6%
+  pierna     Spanish ( 24.2%) Pred: Polish  |en 16%|es 24%|fi 18%|nl 17%|pl 25%
+  rakastin   Finnish ( 57.2%)               |en  8%|es 11%|fi 57%|nl  9%|pl 14%
+  korttia    Finnish ( 53.4%)               |en  8%|es  8%|fi 53%|nl  6%|pl 25%
+  syotavaa   Finnish ( 57.5%)               |en  3%|es  2%|fi 58%|nl  2%|pl 36%
+  leveren    Dutch   ( 39.6%)               |en 21%|es 32%|fi  3%|nl 40%|pl  4%
+  haren      Dutch   ( 32.2%)               |en 30%|es 17%|fi 14%|nl 32%|pl  7%
+  weggelopen Dutch   ( 43.4%)               |en 19%|es 32%|fi  1%|nl 43%|pl  5%
+  poddac     Polish  ( 40.5%)               |en 13%|es 18%|fi  9%|nl 20%|pl 40%
+  studia     Polish  (  9.2%) Pred: Finnish |en 11%|es  6%|fi 56%|nl 18%|pl  9%
+  powietrze  Polish  ( 66.4%)               |en  9%|es 11%|fi  3%|nl 11%|pl 66%
+epoch 1 iteration 807 validation-accuracy 48.8%
+  noisy      English ( 21.4%) Pred: Dutch   |en 21%|es 19%|fi 21%|nl 23%|pl 16%
+  cutie      English ( 18.7%) Pred: Polish  |en 19%|es 19%|fi 10%|nl 21%|pl 30%
+  jammed     English ( 30.1%)               |en 30%|es 10%|fi 27%|nl 13%|pl 20%
+  ingleses   Spanish ( 31.1%) Pred: Dutch   |en 30%|es 31%|fi  5%|nl 32%|pl  1%
+  ejecutivo  Spanish ( 30.4%) Pred: Dutch   |en 29%|es 30%|fi  1%|nl 35%|pl  5%
+  pierna     Spanish ( 24.1%)               |en 17%|es 24%|fi 22%|nl 17%|pl 20%
+  rakastin   Finnish ( 66.4%)               |en  8%|es 10%|fi 66%|nl  9%|pl  7%
+  korttia    Finnish ( 75.5%)               |en  5%|es  4%|fi 76%|nl  4%|pl 12%
+  syotavaa   Finnish ( 84.4%)               |en  1%|es  1%|fi 84%|nl  1%|pl 13%
+  leveren    Dutch   ( 40.4%)               |en 25%|es 31%|fi  2%|nl 40%|pl  2%
+  haren      Dutch   ( 31.7%) Pred: English |en 37%|es 15%|fi 11%|nl 32%|pl  5%
+  weggelopen Dutch   ( 39.2%)               |en 20%|es 36%|fi  1%|nl 39%|pl  4%
+  poddac     Polish  ( 34.4%)               |en 14%|es 20%|fi 10%|nl 22%|pl 34%
+  studia     Polish  (  7.2%) Pred: Finnish |en 12%|es  5%|fi 63%|nl 14%|pl  7%
+  powietrze  Polish  ( 54.8%)               |en  9%|es 11%|fi 11%|nl 14%|pl 55%
+epoch 1 iteration 831 validation-accuracy 50.2%
+  noisy      English ( 20.8%) Pred: Dutch   |en 21%|es 20%|fi 20%|nl 23%|pl 16%
+  cutie      English ( 17.2%) Pred: Polish  |en 17%|es 21%|fi 10%|nl 21%|pl 31%
+  jammed     English ( 34.6%)               |en 35%|es  9%|fi 29%|nl 14%|pl 13%
+  ingleses   Spanish ( 29.1%)               |en 27%|es 29%|fi 12%|nl 29%|pl  3%
+  ejecutivo  Spanish ( 21.3%) Pred: Polish  |en 20%|es 21%|fi  4%|nl 20%|pl 34%
+  pierna     Spanish ( 23.7%) Pred: Finnish |en 16%|es 24%|fi 24%|nl 16%|pl 20%
+  rakastin   Finnish ( 81.1%)               |en  5%|es  5%|fi 81%|nl  6%|pl  3%
+  korttia    Finnish ( 61.9%)               |en 12%|es  7%|fi 62%|nl  9%|pl 10%
+  syotavaa   Finnish ( 69.9%)               |en  8%|es  4%|fi 70%|nl  5%|pl 13%
+  leveren    Dutch   ( 34.6%)               |en 20%|es 32%|fi  7%|nl 35%|pl  6%
+  haren      Dutch   ( 29.4%) Pred: English |en 32%|es 14%|fi 18%|nl 29%|pl  7%
+  weggelopen Dutch   ( 23.6%) Pred: Spanish |en 12%|es 34%|fi  2%|nl 24%|pl 29%
+  poddac     Polish  ( 35.6%)               |en 14%|es 21%|fi  8%|nl 21%|pl 36%
+  studia     Polish  (  5.9%) Pred: Finnish |en 15%|es  5%|fi 56%|nl 18%|pl  6%
+  powietrze  Polish  ( 41.1%)               |en 13%|es 16%|fi  7%|nl 23%|pl 41%
+epoch 1 iteration 855 validation-accuracy 49.0%
+  noisy      English ( 20.7%) Pred: Dutch   |en 21%|es 20%|fi 21%|nl 23%|pl 15%
+  cutie      English ( 16.9%) Pred: Polish  |en 17%|es 20%|fi 10%|nl 21%|pl 32%
+  jammed     English ( 35.9%)               |en 36%|es 10%|fi 28%|nl 13%|pl 12%
+  ingleses   Spanish ( 26.3%) Pred: English |en 34%|es 26%|fi 10%|nl 27%|pl  2%
+  ejecutivo  Spanish ( 22.5%) Pred: Polish  |en 21%|es 23%|fi  6%|nl 20%|pl 30%
+  pierna     Spanish ( 21.5%) Pred: Polish  |en 14%|es 21%|fi 22%|nl 15%|pl 27%
+  rakastin   Finnish ( 72.2%)               |en  9%|es  8%|fi 72%|nl  8%|pl  3%
+  korttia    Finnish ( 57.1%)               |en 15%|es  7%|fi 57%|nl 10%|pl 10%
+  syotavaa   Finnish ( 69.5%)               |en  8%|es  4%|fi 69%|nl  5%|pl 13%
+  leveren    Dutch   ( 30.8%) Pred: Spanish |en 23%|es 36%|fi  7%|nl 31%|pl  3%
+  haren      Dutch   ( 29.6%) Pred: English |en 35%|es 15%|fi 16%|nl 30%|pl  5%
+  weggelopen Dutch   ( 24.0%) Pred: Spanish |en 13%|es 31%|fi  5%|nl 24%|pl 27%
+  poddac     Polish  ( 38.7%)               |en 12%|es 19%|fi  8%|nl 22%|pl 39%
+  studia     Polish  (  4.8%) Pred: Finnish |en 19%|es  7%|fi 47%|nl 23%|pl  5%
+  powietrze  Polish  ( 61.2%)               |en  9%|es  9%|fi  7%|nl 14%|pl 61%
+epoch 1 iteration 880 validation-accuracy 50.4%
+  noisy      English ( 20.7%) Pred: Dutch   |en 21%|es 19%|fi 21%|nl 24%|pl 16%
+  cutie      English ( 15.5%) Pred: Polish  |en 16%|es 19%|fi 10%|nl 21%|pl 34%
+  jammed     English ( 32.0%)               |en 32%|es 11%|fi 28%|nl 13%|pl 16%
+  ingleses   Spanish ( 27.9%) Pred: English |en 32%|es 28%|fi  7%|nl 30%|pl  2%
+  ejecutivo  Spanish ( 36.9%)               |en 17%|es 37%|fi  4%|nl 25%|pl 17%
+  pierna     Spanish ( 22.6%) Pred: Polish  |en 12%|es 23%|fi 20%|nl 12%|pl 33%
+  rakastin   Finnish ( 65.8%)               |en  9%|es 11%|fi 66%|nl  8%|pl  6%
+  korttia    Finnish ( 53.0%)               |en 11%|es  7%|fi 53%|nl  8%|pl 21%
+  syotavaa   Finnish ( 55.5%)               |en  4%|es  2%|fi 55%|nl  2%|pl 36%
+  leveren    Dutch   ( 31.9%) Pred: Spanish |en 18%|es 45%|fi  4%|nl 32%|pl  2%
+  haren      Dutch   ( 33.5%)               |en 32%|es 18%|fi 12%|nl 33%|pl  5%
+  weggelopen Dutch   ( 19.6%) Pred: Spanish |en  9%|es 35%|fi  4%|nl 20%|pl 32%
+  poddac     Polish  ( 41.7%)               |en 10%|es 20%|fi  8%|nl 20%|pl 42%
+  studia     Polish  (  7.5%) Pred: Finnish |en 18%|es  6%|fi 43%|nl 25%|pl  8%
+  powietrze  Polish  ( 80.5%)               |en  4%|es  4%|fi  5%|nl  6%|pl 81%
+epoch 1 iteration 906 validation-accuracy 51.4%
+  noisy      English ( 20.9%) Pred: Dutch   |en 21%|es 20%|fi 19%|nl 26%|pl 13%
+  cutie      English ( 16.6%) Pred: Polish  |en 17%|es 21%|fi  9%|nl 25%|pl 28%
+  jammed     English ( 31.9%)               |en 32%|es 11%|fi 27%|nl 13%|pl 17%
+  ingleses   Spanish ( 31.7%) Pred: Dutch   |en 29%|es 32%|fi  5%|nl 33%|pl  1%
+  ejecutivo  Spanish ( 51.8%)               |en 12%|es 52%|fi  1%|nl 25%|pl 10%
+  pierna     Spanish ( 28.7%)               |en 16%|es 29%|fi 15%|nl 17%|pl 23%
+  rakastin   Finnish ( 53.4%)               |en 10%|es 22%|fi 53%|nl  9%|pl  5%
+  korttia    Finnish ( 54.7%)               |en 13%|es  9%|fi 55%|nl 10%|pl 13%
+  syotavaa   Finnish ( 73.9%)               |en  5%|es  2%|fi 74%|nl  3%|pl 16%
+  leveren    Dutch   ( 30.4%) Pred: Spanish |en 15%|es 51%|fi  2%|nl 30%|pl  2%
+  haren      Dutch   ( 36.5%)               |en 31%|es 17%|fi 11%|nl 36%|pl  5%
+  weggelopen Dutch   ( 23.9%) Pred: Spanish |en  8%|es 60%|fi  1%|nl 24%|pl  8%
+  poddac     Polish  ( 32.6%)               |en 12%|es 22%|fi  6%|nl 27%|pl 33%
+  studia     Polish  (  6.7%) Pred: Finnish |en 19%|es  6%|fi 42%|nl 26%|pl  7%
+  powietrze  Polish  ( 35.6%)               |en 15%|es 21%|fi  7%|nl 21%|pl 36%
+epoch 1 iteration 930 validation-accuracy 50.6%
+  noisy      English ( 23.3%) Pred: Dutch   |en 23%|es 22%|fi 18%|nl 24%|pl 13%
+  cutie      English ( 16.7%) Pred: Dutch   |en 17%|es 20%|fi  9%|nl 27%|pl 27%
+  jammed     English ( 30.9%)               |en 31%|es 12%|fi 25%|nl 15%|pl 17%
+  ingleses   Spanish ( 28.5%) Pred: English |en 34%|es 28%|fi  7%|nl 29%|pl  1%
+  ejecutivo  Spanish ( 42.6%)               |en 23%|es 43%|fi  3%|nl 22%|pl 10%
+  pierna     Spanish ( 28.8%)               |en 19%|es 29%|fi 19%|nl 16%|pl 18%
+  rakastin   Finnish ( 44.8%)               |en 11%|es 31%|fi 45%|nl  9%|pl  3%
+  korttia    Finnish ( 40.2%)               |en 17%|es 16%|fi 40%|nl 16%|pl 11%
+  syotavaa   Finnish ( 76.8%)               |en  5%|es  2%|fi 77%|nl  5%|pl 11%
+  leveren    Dutch   ( 24.0%) Pred: Spanish |en 21%|es 50%|fi  4%|nl 24%|pl  2%
+  haren      Dutch   ( 36.1%)               |en 31%|es 18%|fi 12%|nl 36%|pl  4%
+  weggelopen Dutch   ( 20.6%) Pred: Spanish |en 17%|es 49%|fi  2%|nl 21%|pl 11%
+  poddac     Polish  ( 35.4%)               |en 12%|es 21%|fi  6%|nl 25%|pl 35%
+  studia     Polish  (  4.3%) Pred: Finnish |en 19%|es  6%|fi 40%|nl 30%|pl  4%
+  powietrze  Polish  ( 28.4%)               |en 17%|es 28%|fi  9%|nl 19%|pl 28%
+epoch 1 iteration 952 validation-accuracy 49.6%
+  noisy      English ( 21.7%) Pred: Dutch   |en 22%|es 20%|fi 20%|nl 24%|pl 15%
+  cutie      English ( 16.6%) Pred: Polish  |en 17%|es 19%|fi 11%|nl 25%|pl 29%
+  jammed     English ( 36.5%)               |en 37%|es 13%|fi 24%|nl 18%|pl  9%
+  ingleses   Spanish ( 24.6%) Pred: Dutch   |en 28%|es 25%|fi  9%|nl 36%|pl  2%
+  ejecutivo  Spanish ( 36.1%)               |en 11%|es 36%|fi  0%|nl 19%|pl 33%
+  pierna     Spanish ( 27.5%)               |en 16%|es 27%|fi 20%|nl 14%|pl 22%
+  rakastin   Finnish ( 54.4%)               |en  8%|es 24%|fi 54%|nl  9%|pl  4%
+  korttia    Finnish ( 68.1%)               |en 11%|es  7%|fi 68%|nl  8%|pl  6%
+  syotavaa   Finnish ( 96.8%)               |en  1%|es  0%|fi 97%|nl  1%|pl  1%
+  leveren    Dutch   ( 32.8%) Pred: Spanish |en 17%|es 44%|fi  3%|nl 33%|pl  3%
+  haren      Dutch   ( 37.8%)               |en 28%|es 18%|fi 12%|nl 38%|pl  5%
+  weggelopen Dutch   ( 28.2%) Pred: Spanish |en 10%|es 34%|fi  0%|nl 28%|pl 27%
+  poddac     Polish  ( 43.0%)               |en 11%|es 16%|fi  6%|nl 25%|pl 43%
+  studia     Polish  (  3.8%) Pred: Finnish |en 10%|es  3%|fi 69%|nl 14%|pl  4%
+  powietrze  Polish  ( 14.0%) Pred: Spanish |en 21%|es 34%|fi 11%|nl 21%|pl 14%
+epoch 1 iteration 977 validation-accuracy 51.0%
+  noisy      English ( 23.1%) Pred: Dutch   |en 23%|es 21%|fi 17%|nl 25%|pl 14%
+  cutie      English ( 15.8%) Pred: Polish  |en 16%|es 18%|fi 10%|nl 26%|pl 31%
+  jammed     English ( 32.3%)               |en 32%|es 13%|fi 24%|nl 18%|pl 12%
+  ingleses   Spanish ( 18.6%) Pred: Dutch   |en 29%|es 19%|fi 11%|nl 40%|pl  2%
+  ejecutivo  Spanish ( 24.1%) Pred: Polish  |en 16%|es 24%|fi  3%|nl 20%|pl 37%
+  pierna     Spanish ( 27.7%) Pred: Polish  |en 14%|es 28%|fi 18%|nl 12%|pl 28%
+  rakastin   Finnish ( 45.8%)               |en  9%|es 23%|fi 46%|nl 14%|pl  8%
+  korttia    Finnish ( 47.3%)               |en 14%|es 12%|fi 47%|nl 13%|pl 14%
+  syotavaa   Finnish ( 92.0%)               |en  2%|es  1%|fi 92%|nl  1%|pl  3%
+  leveren    Dutch   ( 37.1%)               |en 19%|es 33%|fi  7%|nl 37%|pl  4%
+  haren      Dutch   ( 39.9%)               |en 26%|es 18%|fi 12%|nl 40%|pl  4%
+  weggelopen Dutch   ( 18.1%) Pred: Polish  |en  8%|es 14%|fi  2%|nl 18%|pl 58%
+  poddac     Polish  ( 55.6%)               |en  8%|es 13%|fi  5%|nl 18%|pl 56%
+  studia     Polish  (  4.1%) Pred: Finnish |en 16%|es  5%|fi 51%|nl 24%|pl  4%
+  powietrze  Polish  ( 38.6%)               |en 13%|es 23%|fi  9%|nl 17%|pl 39%
+epoch 1 iteration 1,003 validation-accuracy 53.6%
+  noisy      English ( 22.2%)               |en 22%|es 21%|fi 20%|nl 22%|pl 16%
+  cutie      English ( 15.2%) Pred: Polish  |en 15%|es 20%|fi  9%|nl 27%|pl 29%
+  jammed     English ( 31.3%)               |en 31%|es 12%|fi 26%|nl 17%|pl 13%
+  ingleses   Spanish ( 17.2%) Pred: Dutch   |en 28%|es 17%|fi 10%|nl 43%|pl  2%
+  ejecutivo  Spanish ( 24.2%) Pred: Polish  |en 12%|es 24%|fi  2%|nl 15%|pl 47%
+  pierna     Spanish ( 26.2%) Pred: Polish  |en 14%|es 26%|fi 17%|nl 14%|pl 29%
+  rakastin   Finnish ( 52.5%)               |en 10%|es 18%|fi 53%|nl 15%|pl  5%
+  korttia    Finnish ( 49.4%)               |en 13%|es 10%|fi 49%|nl 12%|pl 15%
+  syotavaa   Finnish ( 92.8%)               |en  2%|es  1%|fi 93%|nl  1%|pl  3%
+  leveren    Dutch   ( 40.3%)               |en 20%|es 31%|fi  6%|nl 40%|pl  4%
+  haren      Dutch   ( 38.0%)               |en 27%|es 17%|fi 14%|nl 38%|pl  4%
+  weggelopen Dutch   ( 11.6%) Pred: Polish  |en  3%|es 12%|fi  0%|nl 12%|pl 73%
+  poddac     Polish  ( 60.5%)               |en  6%|es 12%|fi  5%|nl 16%|pl 61%
+  studia     Polish  (  3.3%) Pred: Finnish |en 12%|es  4%|fi 62%|nl 18%|pl  3%
+  powietrze  Polish  ( 55.5%)               |en  9%|es 19%|fi  5%|nl 12%|pl 56%
+epoch 1 iteration 1,030 validation-accuracy 54.6%
+  noisy      English ( 24.2%)               |en 24%|es 23%|fi 17%|nl 23%|pl 13%
+  cutie      English ( 17.9%) Pred: Dutch   |en 18%|es 19%|fi 10%|nl 26%|pl 26%
+  jammed     English ( 32.6%)               |en 33%|es 11%|fi 26%|nl 17%|pl 14%
+  ingleses   Spanish ( 20.5%) Pred: Dutch   |en 33%|es 20%|fi  4%|nl 42%|pl  1%
+  ejecutivo  Spanish ( 30.8%) Pred: English |en 34%|es 31%|fi  3%|nl 23%|pl 10%
+  pierna     Spanish ( 29.9%)               |en 14%|es 30%|fi 16%|nl 14%|pl 26%
+  rakastin   Finnish ( 60.4%)               |en 11%|es 14%|fi 60%|nl 12%|pl  3%
+  korttia    Finnish ( 38.9%)               |en 15%|es 13%|fi 39%|nl 15%|pl 18%
+  syotavaa   Finnish ( 87.8%)               |en  3%|es  2%|fi 88%|nl  2%|pl  5%
+  leveren    Dutch   ( 37.8%)               |en 24%|es 33%|fi  3%|nl 38%|pl  2%
+  haren      Dutch   ( 35.2%)               |en 27%|es 20%|fi 13%|nl 35%|pl  4%
+  weggelopen Dutch   ( 36.1%)               |en 19%|es 23%|fi  2%|nl 36%|pl 20%
+  poddac     Polish  ( 56.8%)               |en  7%|es 14%|fi  6%|nl 16%|pl 57%
+  studia     Polish  (  3.5%) Pred: Finnish |en 16%|es  9%|fi 45%|nl 27%|pl  4%
+  powietrze  Polish  ( 44.9%)               |en 13%|es 20%|fi  6%|nl 16%|pl 45%
+epoch 1 iteration 1,055 validation-accuracy 54.6%
+  noisy      English ( 25.8%)               |en 26%|es 22%|fi 18%|nl 22%|pl 13%
+  cutie      English ( 18.1%) Pred: Dutch   |en 18%|es 20%|fi 11%|nl 27%|pl 24%
+  jammed     English ( 30.1%) Pred: Finnish |en 30%|es 10%|fi 31%|nl 16%|pl 12%
+  ingleses   Spanish ( 22.7%) Pred: Dutch   |en 36%|es 23%|fi  2%|nl 39%|pl  0%
+  ejecutivo  Spanish ( 37.3%)               |en 34%|es 37%|fi  1%|nl 21%|pl  6%
+  pierna     Spanish ( 35.7%)               |en 15%|es 36%|fi 13%|nl 13%|pl 24%
+  rakastin   Finnish ( 71.2%)               |en  8%|es  9%|fi 71%|nl  9%|pl  2%
+  korttia    Finnish ( 50.5%)               |en 14%|es 10%|fi 50%|nl 13%|pl 13%
+  syotavaa   Finnish ( 90.3%)               |en  2%|es  2%|fi 90%|nl  2%|pl  4%
+  leveren    Dutch   ( 35.3%) Pred: Spanish |en 25%|es 37%|fi  2%|nl 35%|pl  1%
+  haren      Dutch   ( 32.7%)               |en 30%|es 18%|fi 15%|nl 33%|pl  4%
+  weggelopen Dutch   ( 42.7%)               |en 16%|es 32%|fi  0%|nl 43%|pl  9%
+  poddac     Polish  ( 56.4%)               |en  7%|es 14%|fi  6%|nl 17%|pl 56%
+  studia     Polish  (  3.0%) Pred: Finnish |en 19%|es  8%|fi 48%|nl 22%|pl  3%
+  powietrze  Polish  ( 37.9%)               |en 15%|es 24%|fi  3%|nl 20%|pl 38%
+epoch 1 iteration 1,081 validation-accuracy 53.8%
+  noisy      English ( 25.1%)               |en 25%|es 20%|fi 16%|nl 23%|pl 16%
+  cutie      English ( 19.3%) Pred: Dutch   |en 19%|es 21%|fi 11%|nl 27%|pl 21%
+  jammed     English ( 24.3%) Pred: Finnish |en 24%|es  9%|fi 38%|nl 15%|pl 14%
+  ingleses   Spanish ( 24.9%) Pred: Dutch   |en 33%|es 25%|fi  3%|nl 39%|pl  1%
+  ejecutivo  Spanish ( 33.0%) Pred: English |en 38%|es 33%|fi  1%|nl 24%|pl  4%
+  pierna     Spanish ( 38.5%)               |en 15%|es 39%|fi 12%|nl 13%|pl 22%
+  rakastin   Finnish ( 79.3%)               |en  4%|es  8%|fi 79%|nl  5%|pl  3%
+  korttia    Finnish ( 57.2%)               |en  9%|es 11%|fi 57%|nl 11%|pl 12%
+  syotavaa   Finnish ( 90.5%)               |en  2%|es  2%|fi 91%|nl  2%|pl  4%
+  leveren    Dutch   ( 36.6%)               |en 23%|es 35%|fi  4%|nl 37%|pl  2%
+  haren      Dutch   ( 30.0%)               |en 25%|es 19%|fi 21%|nl 30%|pl  5%
